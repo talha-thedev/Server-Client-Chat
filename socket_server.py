@@ -10,7 +10,7 @@ def ver(bagt):
 
 
 s= skt.socket(skt.AF_INET,skt.SOCK_STREAM)
-s.bind(('',the port you wanted(have to be same as your client.))) #this will take your default IP adress 
+s.bind(('',the port you wanted(has to be same as your client.))) #this will take your default IP adress 
 print('Dinliyorum...')
 s.listen(1)
 bagt, addr=s.accept()
