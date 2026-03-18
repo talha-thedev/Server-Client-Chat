@@ -6,11 +6,11 @@ def al(bagt):
      print(bagt.recv(1024).decode('utf-8', errors='ignore'))
 
 def ver(bagt):
-   bagt.send(input('Mesaji Yaz:').encode())
+   bagt.send(input("You'r message:").encode())
 
 
 s= skt.socket(skt.AF_INET,skt.SOCK_STREAM)
-s.bind(('',1453)) #localhost
+s.bind(('',the port you wanted(have to be same as your client.))) #this will take your default IP adress 
 print('Dinliyorum...')
 s.listen(1)
 bagt, addr=s.accept()
